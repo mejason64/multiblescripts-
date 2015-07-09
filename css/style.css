@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-size: cover;
+  background: url(../img/retmag7_800x600.jpg) no-repeat center;
+}
+
+#navLinks {
+  overflow: hidden;
+  display: inline-block;
+}
+
+#navLinks ul {
+  width: 100%;
+}
+
+#navLinks ul li {
+  width: 100%;
+  text-align: center;
+  float: right;
+}
+
+.hide {
+  height: 0;
+  transition: height 1s;
+}
+
+.show {
+  height: 500px;
+  transition: height 1s;
+}
+
+@media (min-width: 768px) {
+  #navButton {
+    display: none;
+  }
+}
+img {
+  width: 100%;
+}
+
+figure {
+  position: absolute;
+  opacity: 0;
+  transition: 2s;
+}
+
+.slideshow {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.slide1 {
+  background: url(../img/maxresdefault.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+.slide2 {
+  background: url(../img/GAFP_1310_P5.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+.slide3 {
+  background: url(../img/mark-newell-buck_02.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+figure.show {
+  opacity: 1;
+  position: static;
+  transition: 2s;
+}
+
+.next, .prev {
+  color: yellow;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  margin-top: -.75em;
+  background: #bf4040;
+  opacity: 1;
+}
+
+.next {
+  right: 10px;
+  padding: 10px, 5px, 15px, 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.prev {
+  left: 10px;
+  padding: 10px, 5px, 15px, 10px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.next:hover, .prev:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+html {
+  height: 100%;
+}
+
+div {
+  text-color: white;
+}
+
+body {
+  background-image: url("../img/img/retmag7_800x600.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1000;
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+#overlay div {
+  width: 75%;
+  margin: 100px auto;
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+}
+
+.hide {
+  visibility: hidden;
+}
