@@ -3,9 +3,28 @@
   margin: 0;
 }
 
-nav {
-  background-size: cover;
+header {
+  opacity: .75;
   background: url(../img/retmag7_800x600.jpg) no-repeat center;
+  background-size: cover;
+  height: 200px;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+  border-left-width: 4px solid red;
+  border-right-width: 4px solid red;
+}
+
+nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #navLinks {
@@ -14,13 +33,32 @@ nav {
 }
 
 #navLinks ul {
-  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 10px 20px;
+  padding: 10px 10px;
 }
 
 #navLinks ul li {
   width: 100%;
-  text-align: center;
-  float: right;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+#navLinks ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .hide {
@@ -46,6 +84,9 @@ figure {
   position: absolute;
   opacity: 0;
   transition: 2s;
+  border-bottom: 2px solid red;
+  border-left-width: 4px solid red;
+  border-right-width: 4px solid red;
 }
 
 .slideshow {
@@ -112,15 +153,8 @@ html {
   height: 100%;
 }
 
-div {
+div p {
   text-color: white;
-}
-
-body {
-  background-image: url("../img/img/retmag7_800x600.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 html {
@@ -142,7 +176,7 @@ html {
   width: 75%;
   margin: 100px auto;
   background-color: #fff;
-  border: 1px solid black;
+  border: 1px solid red;
   padding: 15px;
   text-align: center;
 }
